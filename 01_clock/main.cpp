@@ -15,10 +15,13 @@ int main() {
     err = a = 0;
     while(err == 0){
         cout << "Enter hours: " << endl;
-        cin >> h;
+        cin >> hour;
         cout << "Enter minutes: " << endl;
-        cin >> m;
+        cin >> minute;
         cout << "Enter seconds: " << endl;
-        cin >> s;
-    }
+        cin >> second;
+
+        if(hour < 24 && minute < 60 && second < 60){
+            err++;
+        }
 }
