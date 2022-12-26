@@ -4,7 +4,14 @@
 using namespace std;
 
 int main() {
-    int h, m, s, a, err;
+    // Declaring variables
+    int hour;
+    int minute;
+    int second;
+    int a;
+    int err;
+
+    // Setting the variables to 0 and clock loop
     err = a = 0;
     while(err == 0){
         cout << "Enter hours: " << endl;
