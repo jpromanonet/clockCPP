@@ -23,5 +23,13 @@ int main() {
 
         if(hour < 24 && minute < 60 && second < 60){
             err++;
+        } else {
+            system("cls");
+
         }
+}
+
+while (a == 0) {
+    system("cls");
+    
 }
