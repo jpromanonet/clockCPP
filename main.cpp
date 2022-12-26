@@ -35,7 +35,7 @@ while (a == 0) {
     Sleep(1000);
     second++;
 
-    if (second == 60) {
+    if (second > 59) {
         second = 0;
         minute++;
     }
