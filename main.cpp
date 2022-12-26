@@ -46,4 +46,9 @@ while (a == 0) {
         minute = 0;
         hour++;
     }
+
+    // Calculate days
+    if(hour > 23){
+        hour = 0;
+    }
 }
