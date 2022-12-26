@@ -27,28 +27,32 @@ int main() {
             system("cls");
 
         }
-}
-
-while (a == 0) {
-    system("cls");
-    cout << hour << ":" << minute << ":" << second << endl;
-    Sleep(1000);
-    second++;
-
-    // Calculate minutes
-    if (second > 59) {
-        second = 0;
-        minute++;
     }
 
-    // Calculate hours
-    if (minute > 59) {
-        minute = 0;
-        hour++;
+    while (a == 0) {
+        system("cls");
+        cout << hour << ":" << minute << ":" << second << endl;
+        Sleep(1000);
+        second++;
+
+        // Calculate minutes
+        if (second > 59) {
+            second = 0;
+            minute++;
+        }
+
+        // Calculate hours
+        if (minute > 59) {
+            minute = 0;
+            hour++;
+        }
+
+        // Calculate days
+        if(hour > 23){
+            hour = 0;
+        }
     }
 
-    // Calculate days
-    if(hour > 23){
-        hour = 0;
-    }
+    return 0;
+
 }
