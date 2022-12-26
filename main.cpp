@@ -35,8 +35,15 @@ while (a == 0) {
     Sleep(1000);
     second++;
 
+    // Calculate minutes
     if (second > 59) {
         second = 0;
         minute++;
+    }
+
+    // Calculate hours
+    if (minute > 59) {
+        minute = 0;
+        hour++;
     }
 }
