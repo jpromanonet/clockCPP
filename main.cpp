@@ -32,4 +32,11 @@ int main() {
 while (a == 0) {
     system("cls");
     cout << hour << ":" << minute << ":" << second << endl;
+    Sleep(1000);
+    second++;
+
+    if (second == 60) {
+        second = 0;
+        minute++;
+    }
 }
