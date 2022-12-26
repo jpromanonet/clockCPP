@@ -31,5 +31,5 @@ int main() {
 
 while (a == 0) {
     system("cls");
-    
+    cout << hour << ":" << minute << ":" << second << endl;
 }
